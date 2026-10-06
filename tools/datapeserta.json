@@ -1,0 +1,81 @@
+[
+    {
+        "id": 2,
+        "nama_lengkap": "Ahmadi Muslim",
+        "tempat_lahir": "karang baru",
+        "tanggal_lahir": "2002-09-16",
+        "alamat": "jalan paya raja",
+        "email": "ahmadimuslim55@guru.smk.belajar.id",
+        "no_hp": "0827126873123",
+        "sekolah": "SMKN 1 Karang Baru",
+        "jurusan": "Rekayasa Perangkat Lunak",
+        "skills": [
+            "HTML",
+            "PHP",
+            "Python"
+        ],
+        "cita_cita": "Web developer, Cybler Security",
+        "foto": "peserta_2_1789576669.png",
+        "tanggal_buat": "2026-09-16 15:50:59"
+    },
+    {
+        "id": 3,
+        "nama_lengkap": "mariescha",
+        "tempat_lahir": "kebun tengah",
+        "tanggal_lahir": "09-12-2010",
+        "alamat": "bukit rata",
+        "email": "marieschanajwachacha@gmail.com",
+        "no_hp": "07128374213123",
+        "sekolah": "SMKN 1 Karang Baru",
+        "jurusan": "Rekayasa Perangkat Lunak",
+        "skills": [
+            "HTML",
+            "PHP",
+            "Python",
+            "React",
+            "Js",
+            "Node"
+        ],
+        "cita_cita": "Web developer, Cybler Security, Devops",
+        "foto": "peserta_3_1789577142.png",
+        "tanggal_buat": "2026-09-16 16:45:42"
+    },
+    {
+        "id": 4,
+        "nama_lengkap": "zulikha",
+        "tempat_lahir": "karang baru",
+        "tanggal_lahir": "2010-09-16",
+        "alamat": "jalan medang ara",
+        "email": "ahmadimuslim55@guru.smk.belajar.id",
+        "no_hp": "0827126873123",
+        "sekolah": "SMKN 1 Karang Baru",
+        "jurusan": "Rekayasa Perangkat Lunak",
+        "skills": [
+            "HTML",
+            "PHP",
+            "Python",
+            "js"
+        ],
+        "cita_cita": "Web developer, Cybler Security, Devops",
+        "foto": "peserta_4_1789607575.png",
+        "tanggal_buat": "2026-09-17 01:12:55"
+    },
+    {
+        "id": 5,
+        "nama_lengkap": "mariescha najwa",
+        "tempat_lahir": "bukit rata",
+        "tanggal_lahir": "2026-09-03",
+        "alamat": "bukit rata",
+        "email": "marieschanajwachacha@gmail.com",
+        "no_hp": "3236436433482",
+        "sekolah": "SMKN 1 Karang Baru",
+        "jurusan": "Rekayasa Perangkat Lunak",
+        "skills": [
+            "html",
+            "css"
+        ],
+        "cita_cita": "develover",
+        "foto": "default.png",
+        "tanggal_buat": "2026-09-17 05:07:26"
+    }
+]
