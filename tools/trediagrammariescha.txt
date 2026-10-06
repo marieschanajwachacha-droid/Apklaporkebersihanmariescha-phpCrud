@@ -1,0 +1,102 @@
+│
+├── index.php                 # Halaman homepage selamat datang (Navbar berisi menu loginuser dan loginpelapor)
+│
+├── assets/
+│   ├── js/
+│   ├── css/
+│   ├── plugins/
+│   └── images/
+│       ├── slider/
+│       ├── laporan/          # Menyimpan file Atribut Foto dari tabel pelaporan
+│       ├── pelapor/          # Menyimpan file Atribut Foto dari tabel pelapor
+│       └── user/             # Menyimpan file Atribut Foto dari tabel user
+│  
+├── views/
+│   │
+│   ├── component/ 
+│   │   ├── tamu/
+│   │   │   ├── navbar.php    => Mengarahkan ke menu loginuser dan loginpelapor
+│   │   │   └── footer.php
+│   │   ├── user/
+│   │   │   ├── navbar.php    => Menampilkan informasi akun user (namauser, role, foto)
+│   │   │   ├── sidebaradmin.php    => Akses penuh ke seluruh fitur (No. 1 s/d 9 di Excel)
+│   │   │   ├── sidebarpetugas.php  => Membatasi menu kelola user (Fitur No. 6 disembunyikan)
+│   │   │   └── footer.php
+│   │   └── pelapor/
+│   │       ├── navbar.php    => Menampilkan informasi akun pelapor (namapelapor, foto)
+│   │       ├── sidebar.php   => Menu khusus pelapor untuk akses Dashboard dan Lapor Kebersihan (No. 10)
+│   │       └── footer.php
+│   │
+│   ├── user/   ← (HAK AKSES: ADMIN & PETUGAS)
+│   │   ├── dashboard/
+│   │   │   ├── dashboardadmin.php
+│   │   │   └── dashboardpetugas.php
+│   │   ├── user/              # Manajemen data master user / petugas (Khusus Admin - Fitur No. 6)
+│   │   │   ├── index.php
+│   │   │   ├── create.php
+│   │   │   ├── edit.php
+│   │   │   └── show.php
+│   │   ├── pelapor/           # Manajemen data master pelapor (Siswa/Guru - Fitur No. 7)
+│   │   │   ├── index.php
+│   │   │   ├── create.php
+│   │   │   ├── edit.php
+│   │   │   └── show.php
+│   │   ├── kategori/          # Master data kategori masalah kebersihan (Fitur No. 8)
+│   │   │   ├── index.php
+│   │   │   ├── create.php
+│   │   │   ├── edit.php
+│   │   │   └── show.php
+│   │   ├── lokasi/            # Master data area zonasi sekolah (Fitur No. 9)
+│   │   │   ├── index.php
+│   │   │   ├── create.php
+│   │   │   ├── edit.php
+│   │   │   └── show.php
+│   │   ├── penanganan/        # Proses verifikasi & tindakan atas pelaporan masuk (Fitur No. 5)
+│   │   │   ├── index.php      
+│   │   │   ├── konfirmasi.php 
+│   │   │   └── detail.php
+│   │   └── laporan/           # Halaman rekap dan cetak data kebersihan (Fitur No. 5)
+│   │       ├── laporanharian.php
+│   │       ├── cetaklaporanharian.php
+│   │       ├── laporanbulanan.php
+│   │       ├── cetaklaporanbulanan.php
+│   │       ├── laporantahunan.php
+│   │       └── cetaklaporantahunan.php
+│   │
+│   ├── pelapor/   ← (HAK AKSES: LOGIN PELAPOR / SISWA / GURU)
+│   │   ├── dashboardpelapor.php # Dashboard pantau status kebersihan (Fitur No. 4)
+│   │   ├── profil.php           # Menampilkan data diri pelapor dari tabel pelapor
+│   │   ├── pengajuan/           # Fitur utama Lapor Kebersihan oleh pengunjung/pelapor (Fitur No. 10)
+│   │   │   ├── index.php        # Riwayat pengaduan yang pernah dikirim oleh pelapor tersebut
+│   │   │   └── create.php       # Form input pelaporan baru (Menghubungkan idpelapor, idkategori, idlokasi)
+│   │   └── riwayat_laporan.php  # Pemantauan status pengerjaan kebersihan lapangan
+│   │
+│   ├── landing/   ← (HAK AKSES: PUBLIC / TAMU)
+│   │   ├── home.php             # Halaman utama informasi gerakan kebersihan sekolah (Fitur No. 1)
+│   │   ├── daftarlokasi.php     
+│   │   ├── tentang.php          
+│   │   ├── kontak.php           
+│   │   └── panduan.php          
+│   │
+│   ├── auth/   
+│   │   ├── logout.php
+│   │   ├── loginuser.php        # Form login khusus Admin & Petugas (Fitur No. 2)
+│   │   ├── loginpelapor.php     # Form login khusus Pelapor (Fitur No. 2)
+│   │   └── registerpelapor.php  # Pendaftaran mandiri akun pelapor baru (Fitur No. 3)
+│   │
+│   └── errors/   ← (GLOBAL ERROR HANDLER)
+│       ├── 404.php
+│       ├── 403.php              # Memblokir petugas/pelapor yang mencoba tembus folder via URL langsung
+│       └── 500.php
+│
+└── proses/
+   ├── koneksi.php
+   ├── session.php
+   ├── prosesdashboarduser.php
+   ├── prosesdashboardpelapor.php
+   ├── prosespelapor.php         # Memproses database CRUD data master pelapor
+   ├── proseskategori.php
+   ├── proseslokasi.php
+   ├── prosespelaporan.php       # Memproses form pengaduan dari tabel utama pelaporan (Fitur No. 10)
+   ├── prosespenanganan.php      
+   └── proseslaporan.php   
