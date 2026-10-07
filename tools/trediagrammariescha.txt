@@ -1,4 +1,4 @@
-│
+apklaporkebersihanmariescha
 ├── index.php                 # Halaman homepage selamat datang (Navbar berisi menu loginuser dan loginpelapor)
 │
 ├── assets/
@@ -69,7 +69,7 @@
 │   │   ├── pengajuan/           # Fitur utama Lapor Kebersihan oleh pengunjung/pelapor (Fitur No. 10)
 │   │   │   ├── index.php        # Riwayat pengaduan yang pernah dikirim oleh pelapor tersebut
 │   │   │   └── create.php       # Form input pelaporan baru (Menghubungkan idpelapor, idkategori, idlokasi)
-│   │   └── riwayat_laporan.php  # Pemantauan status pengerjaan kebersihan lapangan
+│   │   └── riwayatlaporan.php  # Pemantauan status pengerjaan kebersihan lapangan
 │   │
 │   ├── landing/   ← (HAK AKSES: PUBLIC / TAMU)
 │   │   ├── home.php             # Halaman utama informasi gerakan kebersihan sekolah (Fitur No. 1)
